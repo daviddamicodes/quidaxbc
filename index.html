@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo-favicon.ico">
+
+        <title>Quidax Book Club</title>
+    </head>
+    <body class="container">
+
+        <div class="search-nav the-display">
+            <div class="search-nav__back return">
+                <svg class="nav__user-icon">
+                    <use xlink:href="img/svg/sprite.svg#left-arrow"></use>
+                </svg>
+            </div>
+
+            <div class="search-nav-form-box">
+                <form action="#" class="search-nav-form">
+                    <input type="text" class="search-nav-form-input" placeholder="Search">
+                    <button class="search-nav-form-button">
+                        <svg class="search-nav-form-icon">
+                            <use xlink:href="img/svg/sprite.svg#magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <div class="nav__logo">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <img class="nav__logo-img" src="img/logo.png" alt="Logo">
+                <div>
+                    <h3 class="nav__logo-name">Quidax Book Club</h3>
+                    <p class="nav__logo-admin">Admin</p>
+                </div>
+            </div>
+
+            <div class="nav__search-box">
+                <form action="#" class="nav__search">
+                    <input type="text" class="nav__search-input" placeholder="Search Books, Gernes, Authors, etc.">
+                    <button class="nav__search-button">
+                        <svg class="nav__search-icon">
+                            <use xlink:href="img/svg/sprite.svg#magnifying-glass"></use>
+                        </svg>
+                        <div class="nav__search-hidden hidden-btn"></div>
+                    </button>
+                </form>
+            </div>
+
+            <div class="nav__user">
+                <div class="nav__user-icon-box">
+                    <svg class="nav__user-icon">
+                        <use xlink:href="img/svg/sprite.svg#book"></use>
+                    </svg>
+                </div>
+                <div class="nav__user-icon-box">
+                    <svg class="nav__user-icon">
+                        <use xlink:href="img/svg/sprite.svg#bell" ></use>
+                    </svg>
+                    <span class="nav__user-notification">3</span>
+                </div>
+                <div class="nav__user-img">
+                    <img src="img/profile-photo.jpg" alt="" class="nav__user-img-photo">
+                </div>
+                
+            </div>
+        </nav>
+
+        <nav class="sidebar hide-sidebar">
+            <div class="sidebar__back">
+                <svg class="nav__user-icon">
+                    <use xlink:href="img/svg/sprite.svg#left-arrow"></use>
+                </svg>
+            </div>
+            <div class="sidebar__admin">
+                <img class="sidebar__admin-img" src="img/logo.png" alt="Logo">
+                <div>
+                    <h3 class="sidebar__admin-name">Quidax Book Club</h3>
+                    <p class="sidebar__admin-admin">Admin</p>
+                </div>
+            </div>
+            <ul class="side-nav">            
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Home</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Profile</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Notifications</a>
+                    <span class="side-nav__link-span side-nav__link-span-green">3</span>
+                </li>
+            </ul>
+            
+            <ul class="side-nav">    
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link side-nav__link-header">Explore</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Books</a>
+                    <span class="side-nav__link-span">273</span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Gernes</a>
+                    <span class="side-nav__link-span">42</span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Authors</a>
+                    <span class="side-nav__link-span">106</span>
+                </li>
+            </ul>    
+                
+            <ul class="side-nav">
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link side-nav__link-header">My Books</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Queued</a>
+                    <span class="side-nav__link-span">3</span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Currently Borrowed</a>
+                    <span class="side-nav__link-span">0</span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">Favourites</a>
+                    <span class="side-nav__link-span">19</span>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">History</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+            </ul>    
+                
+            <ul class="side-nav">
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link side-nav__link-header">Admin</a>
+                    <span class="side-nav__link-span"></span>
+                </li>
+            </ul>  
+        </nav>
+        
+        <div class="content">
+
+            <!-- <nav class="sidebar hide-sidebar">
+                <div class="sidebar__admin">
+                    <img class="sidebar__admin-img" src="img/logo.png" alt="Logo">
+                    <div>
+                        <h3 class="sidebar__admin-name">Quidax Book Club</h3>
+                        <p class="sidebar__admin-admin">Admin</p>
+                    </div>
+                </div>
+                <ul class="side-nav">            
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Home</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Profile</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Notifications</a>
+                        <span class="side-nav__link-span side-nav__link-span-green">3</span>
+                    </li>
+                </ul>
+                
+                <ul class="side-nav">    
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link side-nav__link-header">Explore</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Books</a>
+                        <span class="side-nav__link-span">273</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Gernes</a>
+                        <span class="side-nav__link-span">42</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Authors</a>
+                        <span class="side-nav__link-span">106</span>
+                    </li>
+                </ul>    
+                    
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link side-nav__link-header">My Books</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Queued</a>
+                        <span class="side-nav__link-span">3</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Currently Borrowed</a>
+                        <span class="side-nav__link-span">0</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">Favourites</a>
+                        <span class="side-nav__link-span">19</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">History</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                </ul>    
+                    
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link side-nav__link-header">Admin</a>
+                        <span class="side-nav__link-span"></span>
+                    </li>
+                </ul>  
+            </nav> -->
+            
+            <div class="book-content">
+
+                <div class="featured main-header">
+                    <div class="main-header-title">
+                        <h3 class="main-header__head">Featured books</h3>
+                    </div>
+                    <div class="featured__container main-carousel">
+                        <div class="featured__component">
+                            <div class="featured__component-btn">
+                                <div class="featured__component-btn-dot"></div>
+                            </div>
+                            <div class="featured__component-close">
+                                <svg class="featured__component-close-x the-hov-btn">
+                                    <use xlink:href="img/svg/sprite.svg#cancel" ></use>
+                                </svg>
+                            </div>
+                            <img src="img/cover 1.jpg" class="featured__component-img" alt="Book cover 1">
+                            <figcaption class="featured__component-caption">
+                                <div class="featured__book-info">
+                                    <h4 class="featured__book-info-header-green">Available</h4>
+                                    <div class="featured__book-details">
+                                        <h3>The Effective Engineer</h3>
+                                        <h4>Edmond Lau</h4>
+                                        <span>2009</span>
+                                        <div class="featured__book-details-genre">
+                                            <h4>Genre: <span>Motivational</span></h4>
+                                            <h4>Labels: <span>Creative, Self-help</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="featured__book-rating">
+                                        <div class="featured__book-rating-star">
+                                            <h4>Ratings: 4.0</h4>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-grey">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="featured__book-rating-like">
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">31</p>
+                                            </div>
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="featured__component">
+                            <div class="featured__component-btn">
+                                <div class="featured__component-btn-dot"></div>
+                            </div>
+                            <div class="featured__component-close">
+                                <svg class="featured__component-close-x the-hov-btn">
+                                    <use xlink:href="img/svg/sprite.svg#cancel" ></use>
+                                </svg>
+                            </div>
+                            <img src="img/cover 2.jpg" class="featured__component-img" alt="Book cover 1">
+                            <figcaption class="featured__component-caption">
+                                <div class="featured__book-info">
+                                    <h4 class="featured__book-info-header-red">Borrowed out</h4>
+                                    <div class="featured__book-details">
+                                        <h3>Built To Last</h3>
+                                        <h4>Jim Collins, Jerry I. Porras</h4>
+                                        <span>2001</span>
+                                        <div class="featured__book-details-genre">
+                                            <h4>Genre: <span>Business, Entreprenuership</span></h4>
+                                            <h4>Labels: <span>Creative, Self-help</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="featured__book-rating">
+                                        <div class="featured__book-rating-star">
+                                            <h4>Ratings: 4.0</h4>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-grey">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="featured__book-rating-like">
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">31</p>
+                                            </div>
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="featured__component">
+                            <div class="featured__component-btn">
+                                <div class="featured__component-btn-dot"></div>
+                            </div>
+                            <div class="featured__component-close">
+                                <svg class="featured__component-close-x the-hov-btn">
+                                    <use xlink:href="img/svg/sprite.svg#cancel" ></use>
+                                </svg>
+                            </div>
+                            <img src="img/cover 3.jpg" class="featured__component-img" alt="Book cover 1">
+                            <figcaption class="featured__component-caption">
+                                <div class="featured__book-info">
+                                    <h4 class="featured__book-info-header-green">Available</h4>
+                                    <div class="featured__book-details">
+                                        <h3>The Lean Startup</h3>
+                                        <h4>Eric Reis</h4>
+                                        <span>2005</span>
+                                        <div class="featured__book-details-genre">
+                                            <h4>Genre: <span>Motivational</span></h4>
+                                            <h4>Labels: <span>Creative, Self-help</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="featured__book-rating">
+                                        <div class="featured__book-rating-star">
+                                            <h4>Ratings: 4.0</h4>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-grey">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="featured__book-rating-like">
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">31</p>
+                                            </div>
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="featured__component">
+                            <div class="featured__component-btn">
+                                <div class="featured__component-btn-dot"></div>
+                            </div>
+                            <div class="featured__component-close">
+                                <svg class="featured__component-close-x the-hov-btn">
+                                    <use xlink:href="img/svg/sprite.svg#cancel" ></use>
+                                </svg>
+                            </div>
+                            <img src="img/cover 4.jpg" class="featured__component-img" alt="Book cover 1">
+                            <figcaption class="featured__component-caption">
+                                <div class="featured__book-info">
+                                    <h4 class="featured__book-info-header-green">Available</h4>
+                                    <div class="featured__book-details">
+                                        <h3>Effective Python</h3>
+                                        <h4>Diomidis Spinellis</h4>
+                                        <span></span>
+                                        <div class="featured__book-details-genre">
+                                            <h4>Genre: <span>Motivational</span></h4>
+                                            <h4>Labels: <span>Creative, Self-help</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="featured__book-rating">
+                                        <div class="featured__book-rating-star">
+                                            <h4>Ratings: 4.0</h4>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-grey">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="featured__book-rating-like">
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">31</p>
+                                            </div>
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                        <div class="featured__component">
+                            <div class="featured__component-btn">
+                                <div class="featured__component-btn-dot"></div>
+                            </div>
+                            <div class="featured__component-close">
+                                <svg class="featured__component-close-x the-hov-btn">
+                                    <use xlink:href="img/svg/sprite.svg#cancel" ></use>
+                                </svg>
+                            </div>
+                            <img src="img/cover 5.jpg" class="featured__component-img" alt="Book cover 1">
+                            <figcaption class="featured__component-caption">
+                                <div class="featured__book-info">
+                                    <h4 class="featured__book-info-header-green">Available</h4>
+                                    <div class="featured__book-details">
+                                        <h3>Big Magic</h3>
+                                        <h4>Elizabeth Gilbert</h4>
+                                        <span>2014</span>
+                                        <div class="featured__book-details-genre">
+                                            <h4>Genre: <span>Motivational</span></h4>
+                                            <h4>Labels: <span>Creative, Self-help</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="featured__book-rating">
+                                        <div class="featured__book-rating-star">
+                                            <h4>Ratings: 4.0</h4>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-gold">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="featured__book-rating-star-icon-grey">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="featured__book-rating-like">
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">31</p>
+                                            </div>
+                                            <div class="featured__book-rating-like-user">
+                                                <svg class="featured__book-rating-like-svg">
+                                                    <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                                </svg>
+                                                <p class="featured__book-rating-like-count">29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="recent main-header">
+                    <div class="main-header-title">
+                        <h3 class="main-header__head">Recently added</h3>
+                    </div>
+                    <div class="recent__component">
+                        <div class="recent__component-item">
+                            <img src="img/cover 1.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Effective Engineer</h3>
+                                    <h4>Edmond Lau - 2009</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 2.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-red">Borrowed out</h4>
+                                <div>
+                                    <h3>Built To Last</h3>
+                                    <h4>Jim Collins, Jerry I. Porras - 2001</h4>
+                                    <h4>Business, Entreprenuership</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 3.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Lean Startup</h3>
+                                    <h4>Eric Reis - 2005</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 4.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Effective Python</h3>
+                                    <h4>Diomidis Spinellis</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 5.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Big Magic</h3>
+                                    <h4>Elizabeth Gilbert - 2014</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all main-header">
+                    <div class="main-header-title">
+                        <h3 class="main-header__head">All Books</h3>
+                    </div>
+                    <div class="all__component">
+                        <div class="all__component-item">
+                            <img src="img/cover 1.jpg" alt="" class="all__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Effective Engineer</h3>
+                                    <h4>Edmond Lau - 2009</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 2.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-red">Borrowed out</h4>
+                                <div>
+                                    <h3>Built To Last</h3>
+                                    <h4>Jim Collins, Jerry I. Porras - 2001</h4>
+                                    <h4>Business, Entreprenuership</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 3.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Lean Startup</h3>
+                                    <h4>Eric Reis - 2005</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 4.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Effective Python</h3>
+                                    <h4>Diomidis Spinellis</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 5.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Big Magic</h3>
+                                    <h4>Elizabeth Gilbert - 2014</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 4.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Effective Python</h3>
+                                    <h4>Diomidis Spinellis</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all__component-item">
+                            <img src="img/cover 1.jpg" alt="" class="all__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Effective Engineer</h3>
+                                    <h4>Edmond Lau - 2009</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 2.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-red">Borrowed out</h4>
+                                <div>
+                                    <h3>Built To Last</h3>
+                                    <h4>Jim Collins, Jerry I. Porras - 2001</h4>
+                                    <h4>Business, Entreprenuership</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 3.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Lean Startup</h3>
+                                    <h4>Eric Reis - 2005</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 4.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Effective Python</h3>
+                                    <h4>Diomidis Spinellis</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 5.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>Big Magic</h3>
+                                    <h4>Elizabeth Gilbert - 2014</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all__component-item">
+                            <img src="img/cover 1.jpg" alt="" class="all__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Effective Engineer</h3>
+                                    <h4>Edmond Lau - 2009</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent__component-item">
+                            <img src="img/cover 3.jpg" alt="" class="recent__component-image">
+                            <div class="component-info">
+                                <h4 class="component-info-header-green">Available</h4>
+                                <div>
+                                    <h3>The Lean Startup</h3>
+                                    <h4>Eric Reis - 2005</h4>
+                                    <h4>Motivational</h4>
+                                </div>
+                                <div class="component-rating">
+                                    <div class="component-rating-star">
+                                        <h4>Ratings: 4.0</h4>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-gold">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="component-rating-star-icon-grey">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="component-rating-like">
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#two-contacts" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">31</p>
+                                        </div>
+                                        <div class="component-rating-like-user">
+                                            <svg class="component-rating-like-svg">
+                                                <use xlink:href="img/svg/sprite.svg#heart" ></use>
+                                            </svg>
+                                            <p class="component-rating-like-count">29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+        
+                <!-- <div class="all main-header">
+                    <div class="main-header-title">
+                        <h3 class="main-header__head">All Books</h3>
+                    </div>
+                </div> -->
+
+            </div>
+
+    
+        </div>
+        
+        <!-- <div class="footer">
+            footer
+        </div> -->
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="index.js"></script>
+</html>
