@@ -79,7 +79,7 @@ const hoverBtnArr = document.querySelectorAll('.featured__component-btn');
 const closeBtnArr = document.querySelectorAll('.featured__component-close-x')
 const figCapArr = document.querySelectorAll('.featured__component-caption');
 
-for (let i = 0; i < (hoverBtnArr.length -1); i++) {
+for (let i = 0; i < (hoverBtnArr.length); i++) {
     hoverBtnArr[i].addEventListener('click', () => {
         //console.log(`no ${i} was clicked`)
         figCapArr[i].classList.add('the-fig-opacity');
